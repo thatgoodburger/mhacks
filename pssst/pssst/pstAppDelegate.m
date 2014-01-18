@@ -7,8 +7,10 @@
 //
 
 #import "pstAppDelegate.h"
+#import "DecryptViewController.h"
 
 @implementation pstAppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -41,6 +43,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSString *cipherText = [url host];
+    self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"Decrypt"];
+    DecryptViewController *decryptView = (DecryptViewController *)self.window.rootViewController;
+    [decryptView passData: cipherText];
+    return YES;
 }
 
 @end

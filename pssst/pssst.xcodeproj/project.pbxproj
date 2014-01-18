@@ -205,7 +205,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					93CCD787188A5AD400C6850F = {
-						DevelopmentTeam = 6F5977KA7G;
+						DevelopmentTeam = K99KPPSM33;
 					};
 					93CCD7A8188A5AD400C6850F = {
 						TestTargetID = 93CCD787188A5AD400C6850F;
@@ -475,6 +475,7 @@
 				93CCD7BC188A5AD500C6850F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93CCD7BD188A5AD500C6850F /* Build configuration list for PBXNativeTarget "pssstTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +484,7 @@
 				93CCD7BF188A5AD500C6850F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
