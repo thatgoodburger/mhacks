@@ -14,13 +14,14 @@
 		93CCD798188A5AD400C6850F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD797188A5AD400C6850F /* main.m */; };
 		93CCD79C188A5AD400C6850F /* pstAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD79B188A5AD400C6850F /* pstAppDelegate.m */; };
 		93CCD79F188A5AD400C6850F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CCD79D188A5AD400C6850F /* Main.storyboard */; };
-		93CCD7A2188A5AD400C6850F /* pstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7A1188A5AD400C6850F /* pstViewController.m */; };
 		93CCD7A4188A5AD400C6850F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CCD7A3188A5AD400C6850F /* Images.xcassets */; };
 		93CCD7AB188A5AD400C6850F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD7AA188A5AD400C6850F /* XCTest.framework */; };
 		93CCD7AC188A5AD500C6850F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78B188A5AD400C6850F /* Foundation.framework */; };
 		93CCD7AD188A5AD500C6850F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78F188A5AD400C6850F /* UIKit.framework */; };
 		93CCD7B5188A5AD500C6850F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93CCD7B3188A5AD500C6850F /* InfoPlist.strings */; };
 		93CCD7B7188A5AD500C6850F /* pssstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7B6188A5AD500C6850F /* pssstTests.m */; };
+		93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C1188A672B00C6850F /* EncryptViewController.m */; };
+		93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C4188A673A00C6850F /* DecryptViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		93CCD79A188A5AD400C6850F /* pstAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pstAppDelegate.h; sourceTree = "<group>"; };
 		93CCD79B188A5AD400C6850F /* pstAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pstAppDelegate.m; sourceTree = "<group>"; };
 		93CCD79E188A5AD400C6850F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93CCD7A0188A5AD400C6850F /* pstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pstViewController.h; sourceTree = "<group>"; };
-		93CCD7A1188A5AD400C6850F /* pstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pstViewController.m; sourceTree = "<group>"; };
 		93CCD7A3188A5AD400C6850F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93CCD7A9188A5AD400C6850F /* pssstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pssstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CCD7AA188A5AD400C6850F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		93CCD7B2188A5AD500C6850F /* pssstTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pssstTests-Info.plist"; sourceTree = "<group>"; };
 		93CCD7B4188A5AD500C6850F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93CCD7B6188A5AD500C6850F /* pssstTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pssstTests.m; sourceTree = "<group>"; };
+		93CCD7C0188A672B00C6850F /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
+		93CCD7C1188A672B00C6850F /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
+		93CCD7C3188A673A00C6850F /* DecryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecryptViewController.h; sourceTree = "<group>"; };
+		93CCD7C4188A673A00C6850F /* DecryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecryptViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,10 @@
 		93CCD77F188A5AD400C6850F = {
 			isa = PBXGroup;
 			children = (
+				93CCD7C0188A672B00C6850F /* EncryptViewController.h */,
+				93CCD7C1188A672B00C6850F /* EncryptViewController.m */,
+				93CCD7C3188A673A00C6850F /* DecryptViewController.h */,
+				93CCD7C4188A673A00C6850F /* DecryptViewController.m */,
 				93CCD791188A5AD400C6850F /* pssst */,
 				93CCD7B0188A5AD500C6850F /* pssstTests */,
 				93CCD78A188A5AD400C6850F /* Frameworks */,
@@ -115,8 +122,6 @@
 				93CCD79A188A5AD400C6850F /* pstAppDelegate.h */,
 				93CCD79B188A5AD400C6850F /* pstAppDelegate.m */,
 				93CCD79D188A5AD400C6850F /* Main.storyboard */,
-				93CCD7A0188A5AD400C6850F /* pstViewController.h */,
-				93CCD7A1188A5AD400C6850F /* pstViewController.m */,
 				93CCD7A3188A5AD400C6850F /* Images.xcassets */,
 				93CCD792188A5AD400C6850F /* Supporting Files */,
 			);
@@ -252,8 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */,
+				93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */,
 				93CCD79C188A5AD400C6850F /* pstAppDelegate.m in Sources */,
-				93CCD7A2188A5AD400C6850F /* pstViewController.m in Sources */,
 				93CCD798188A5AD400C6850F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
