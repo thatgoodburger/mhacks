@@ -10,4 +10,44 @@
 
 @implementation EncryptViewController
 
+@synthesize friendArray, pickerView;
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [friendArray count];
+}
+
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [friendArray objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    friendArray = [[NSMutableArray alloc] init];
+    
+    [friendArray addObject:@"Brad"];
+    [friendArray addObject:@"Carl"];
+    [friendArray addObject:@"Jill"];
+    [friendArray addObject:@"Margret"];
+    [friendArray addObject:@"Sarah"];
+}
+
+- (IBAction)downSwipe:(id)sender
+{
+    [self.view endEditing:YES];
+}
+
 @end

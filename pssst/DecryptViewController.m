@@ -10,4 +10,8 @@
 
 @implementation DecryptViewController
 
+- (IBAction)decryptText:(id)sender
+{
+
+}
 @end

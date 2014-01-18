@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface EncryptViewController : UIViewController
+                    <UIPickerViewDelegate, UIPickerViewDataSource>
+
+- (IBAction)downSwipe:(id)sender;
+
+// a text view for holding the
+@property (weak, nonatomic) IBOutlet UITextView *encryptTextView;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
+@property (strong, nonatomic) NSMutableArray *friendArray;
 
 @end

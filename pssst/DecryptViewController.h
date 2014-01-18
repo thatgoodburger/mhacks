@@ -10,4 +10,8 @@
 
 @interface DecryptViewController : UIViewController
 
+- (IBAction)decryptText:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextView *decryptTextView;
+
 @end
