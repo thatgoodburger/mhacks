@@ -7,7 +7,7 @@
         <!--Encrypt-->
         <scene sceneID="Pgd-iA-geF">
             <objects>
-                <viewController id="OCk-e1-NRS" userLabel="Encrypt" customClass="EncryptViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Encrypt" id="OCk-e1-NRS" userLabel="Encrypt" customClass="EncryptViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oHG-Af-WM5"/>
                         <viewControllerLayoutGuide type="bottom" id="oov-OQ-sxR"/>
@@ -97,6 +97,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Decrypt" id="XBU-4p-lWb" userLabel="Decrypt"/>
+                    <connections>
+                        <outlet property="cipherText" destination="BfK-ze-z7E" id="sqz-j2-QEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRM-pq-VzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DecryptViewController : UIViewController
-- (BOOL) passData: (NSString *) data;
+@property (weak, nonatomic) IBOutlet UITextView *cipherText;
 
+- (void) passData: (NSString *) data;
 @end

@@ -22,6 +22,8 @@
 		93CCD7B7188A5AD500C6850F /* pssstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7B6188A5AD500C6850F /* pssstTests.m */; };
 		93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C1188A672B00C6850F /* EncryptViewController.m */; };
 		93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C4188A673A00C6850F /* DecryptViewController.m */; };
+		E27D5D11188A9A7B00EBD213 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5D10188A9A7B00EBD213 /* RSA.m */; };
+		E27D5D18188A9E1800EBD213 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5D17188A9E1800EBD213 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		93CCD7C1188A672B00C6850F /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
 		93CCD7C3188A673A00C6850F /* DecryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecryptViewController.h; sourceTree = "<group>"; };
 		93CCD7C4188A673A00C6850F /* DecryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecryptViewController.m; sourceTree = "<group>"; };
+		E27D5D0F188A9A7B00EBD213 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		E27D5D10188A9A7B00EBD213 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		E27D5D16188A9E1800EBD213 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		E27D5D17188A9E1800EBD213 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 		93CCD77F188A5AD400C6850F = {
 			isa = PBXGroup;
 			children = (
+				E27D5D16188A9E1800EBD213 /* NSData+Base64.h */,
+				E27D5D17188A9E1800EBD213 /* NSData+Base64.m */,
+				E27D5D0F188A9A7B00EBD213 /* RSA.h */,
+				E27D5D10188A9A7B00EBD213 /* RSA.m */,
 				93CCD7C0188A672B00C6850F /* EncryptViewController.h */,
 				93CCD7C1188A672B00C6850F /* EncryptViewController.m */,
 				93CCD7C3188A673A00C6850F /* DecryptViewController.h */,
@@ -258,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */,
+				E27D5D11188A9A7B00EBD213 /* RSA.m in Sources */,
 				93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */,
+				E27D5D18188A9E1800EBD213 /* NSData+Base64.m in Sources */,
 				93CCD79C188A5AD400C6850F /* pstAppDelegate.m in Sources */,
 				93CCD798188A5AD400C6850F /* main.m in Sources */,
 			);

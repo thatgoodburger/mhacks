@@ -9,8 +9,8 @@
 #import "DecryptViewController.h"
 
 @implementation DecryptViewController
-- (BOOL) passData: (NSString *) data {
-    NSLog(data);
-    return YES;
+- (void)passData: (NSString *) data {
+    self.cipherText.text = data;
 }
+
 @end
