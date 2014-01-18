@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DecryptViewController : UIViewController
+- (BOOL) passData: (NSString *) data;
 
 - (IBAction)decryptText:(id)sender;
 
