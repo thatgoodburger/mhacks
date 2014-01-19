@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93977BF9188BCE31002AF9D4 /* authScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93977BF8188BCE31002AF9D4 /* authScreenViewController.m */; };
+		93977C00188BF2D3002AF9D4 /* blue-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 93977BFE188BF2D3002AF9D4 /* blue-circle.png */; };
+		93977C01188BF2D3002AF9D4 /* grey-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 93977BFF188BF2D3002AF9D4 /* grey-circle.png */; };
 		93CCD78C188A5AD400C6850F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78B188A5AD400C6850F /* Foundation.framework */; };
 		93CCD78E188A5AD400C6850F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78D188A5AD400C6850F /* CoreGraphics.framework */; };
 		93CCD790188A5AD400C6850F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78F188A5AD400C6850F /* UIKit.framework */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		93977BF7188BCE31002AF9D4 /* authScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authScreenViewController.h; sourceTree = SOURCE_ROOT; };
 		93977BF8188BCE31002AF9D4 /* authScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = authScreenViewController.m; sourceTree = SOURCE_ROOT; };
+		93977BFE188BF2D3002AF9D4 /* blue-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-circle.png"; sourceTree = "<group>"; };
+		93977BFF188BF2D3002AF9D4 /* grey-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey-circle.png"; sourceTree = "<group>"; };
 		93CCD788188A5AD400C6850F /* pssst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CCD78B188A5AD400C6850F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93CCD78D188A5AD400C6850F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,9 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93977C02188BF419002AF9D4 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				93977BFE188BF2D3002AF9D4 /* blue-circle.png */,
+				93977BFF188BF2D3002AF9D4 /* grey-circle.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
 		93CCD77F188A5AD400C6850F = {
 			isa = PBXGroup;
 			children = (
+				93977C02188BF419002AF9D4 /* Graphics */,
 				E27D5D16188A9E1800EBD213 /* NSData+Base64.h */,
 				E27D5D17188A9E1800EBD213 /* NSData+Base64.m */,
 				E27D5D0F188A9A7B00EBD213 /* RSA.h */,
@@ -220,7 +234,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					93CCD787188A5AD400C6850F = {
-						DevelopmentTeam = K99KPPSM33;
+						DevelopmentTeam = 6F5977KA7G;
 					};
 					93CCD7A8188A5AD400C6850F = {
 						TestTargetID = 93CCD787188A5AD400C6850F;
@@ -251,7 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93977C01188BF2D3002AF9D4 /* grey-circle.png in Resources */,
 				93CCD7A4188A5AD400C6850F /* Images.xcassets in Resources */,
+				93977C00188BF2D3002AF9D4 /* blue-circle.png in Resources */,
 				93CCD796188A5AD400C6850F /* InfoPlist.strings in Resources */,
 				93CCD79F188A5AD400C6850F /* Main.storyboard in Resources */,
 			);
