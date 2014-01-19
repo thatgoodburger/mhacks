@@ -10,4 +10,6 @@
 
 @interface authScreenViewController : UIViewController
 
+- (IBAction)authenticatePress:(id)sender;
+
 @end

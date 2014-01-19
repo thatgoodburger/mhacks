@@ -10,4 +10,8 @@
 
 @implementation authScreenViewController
 
+- (IBAction)authenticatePress:(id)sender
+{
+	
+}
 @end
