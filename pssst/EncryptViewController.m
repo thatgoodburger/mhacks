@@ -51,6 +51,12 @@
     self.plainText.text = [RSA encryptDatIsh:self.plainText.text];
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [NSString stringWithFormat:@"Pssst://%@", self.plainText.text];
+    MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
+    if([MFMessageComposeViewController canSendText]) {
+        controller.body = pasteboard.string;
+        controller.messageComposeDelegate = self;
+        [self presentViewController:controller animated:YES completion:NULL];
+    }
 }
 
 - (IBAction)leftSwipe:(id)sender

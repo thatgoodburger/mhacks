@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "RSA.h"
+#import <MessageUI/MessageUI.h>
 
-@interface EncryptViewController : UIViewController
-                    <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface EncryptViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, MFMessageComposeViewControllerDelegate>
 
 - (IBAction)downSwipe:(id)sender;
 - (IBAction)leftSwipe:(id)sender;
 
-// a text view for holding the
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UITextView *plainText;
