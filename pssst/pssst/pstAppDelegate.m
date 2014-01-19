@@ -63,6 +63,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
+    
     UITabBarController *nav = (UITabBarController*) self.window.rootViewController;
     [nav setSelectedIndex:1];
     

@@ -54,7 +54,7 @@
 - (IBAction)downSwipe:(id)sender
 {
     [self.view endEditing:YES];
-    
+	
     self.plainText.text = [RSA encryptDatIsh:self.plainText.text];
     
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
@@ -90,4 +90,5 @@
     }
 
 }
+
 @end
