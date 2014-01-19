@@ -14,6 +14,7 @@
 
 - (IBAction)downSwipe:(id)sender;
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result;
+- (IBAction)leftSwipe:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;

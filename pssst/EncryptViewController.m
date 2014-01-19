@@ -9,6 +9,11 @@
 #import "EncryptViewController.h"
 
 @implementation EncryptViewController
+{
+	// keeps track of user authentication for use
+	BOOL authenticated;
+}
+
 
 @synthesize friendArray, pickerView;
 
@@ -35,7 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+	
     friendArray = [[NSMutableArray alloc] init];
     
     [friendArray addObject:@"Brad"];
