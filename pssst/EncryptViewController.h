@@ -13,6 +13,7 @@
 @interface EncryptViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, MFMessageComposeViewControllerDelegate>
 
 - (IBAction)downSwipe:(id)sender;
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result;
 - (IBAction)leftSwipe:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;

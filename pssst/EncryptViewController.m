@@ -9,6 +9,11 @@
 #import "EncryptViewController.h"
 
 @implementation EncryptViewController
+{
+	// keeps track of user authentication for use
+	BOOL authenticated;
+}
+
 
 @synthesize friendArray, pickerView;
 
@@ -35,7 +40,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+	
     friendArray = [[NSMutableArray alloc] init];
     
     [friendArray addObject:@"Brad"];
@@ -48,6 +54,7 @@
 - (IBAction)downSwipe:(id)sender
 {
     [self.view endEditing:YES];
+	
     self.plainText.text = [RSA encryptDatIsh:self.plainText.text];
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [NSString stringWithFormat:@"Pssst://%@", self.plainText.text];
@@ -58,7 +65,10 @@
         [self presentViewController:controller animated:YES completion:NULL];
     }
 }
-
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+	
 - (IBAction)leftSwipe:(id)sender
 {
 	[friendArray removeObject:friendArray[[pickerView selectedRowInComponent:0]]];
