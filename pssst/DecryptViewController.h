@@ -12,5 +12,6 @@
 @interface DecryptViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *cipherText;
 
+- (IBAction)clearTextButton:(id)sender;
 - (void) passData: (NSString *) data;
 @end

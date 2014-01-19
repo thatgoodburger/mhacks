@@ -13,6 +13,7 @@
                     <UIPickerViewDelegate, UIPickerViewDataSource>
 
 - (IBAction)downSwipe:(id)sender;
+- (IBAction)leftSwipe:(id)sender;
 
 // a text view for holding the
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;

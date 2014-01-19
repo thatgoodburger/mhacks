@@ -53,4 +53,10 @@
     pasteboard.string = [NSString stringWithFormat:@"Pssst://%@", self.plainText.text];
 }
 
+- (IBAction)leftSwipe:(id)sender
+{
+	[friendArray removeObject:friendArray[[pickerView selectedRowInComponent:0]]];
+	[pickerView reloadAllComponents];
+}
+
 @end
