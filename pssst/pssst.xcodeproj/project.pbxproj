@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93977BF9188BCE31002AF9D4 /* authScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93977BF8188BCE31002AF9D4 /* authScreenViewController.m */; };
 		93CCD78C188A5AD400C6850F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78B188A5AD400C6850F /* Foundation.framework */; };
 		93CCD78E188A5AD400C6850F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78D188A5AD400C6850F /* CoreGraphics.framework */; };
 		93CCD790188A5AD400C6850F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CCD78F188A5AD400C6850F /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93977BF7188BCE31002AF9D4 /* authScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = authScreenViewController.h; sourceTree = SOURCE_ROOT; };
+		93977BF8188BCE31002AF9D4 /* authScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = authScreenViewController.m; sourceTree = SOURCE_ROOT; };
 		93CCD788188A5AD400C6850F /* pssst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pssst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CCD78B188A5AD400C6850F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93CCD78D188A5AD400C6850F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 				E27D5D17188A9E1800EBD213 /* NSData+Base64.m */,
 				E27D5D0F188A9A7B00EBD213 /* RSA.h */,
 				E27D5D10188A9A7B00EBD213 /* RSA.m */,
+				93977BF7188BCE31002AF9D4 /* authScreenViewController.h */,
+				93977BF8188BCE31002AF9D4 /* authScreenViewController.m */,
 				93CCD7C0188A672B00C6850F /* EncryptViewController.h */,
 				93CCD7C1188A672B00C6850F /* EncryptViewController.m */,
 				93CCD7C3188A673A00C6850F /* DecryptViewController.h */,
@@ -269,6 +274,7 @@
 			files = (
 				93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */,
 				E27D5D11188A9A7B00EBD213 /* RSA.m in Sources */,
+				93977BF9188BCE31002AF9D4 /* authScreenViewController.m in Sources */,
 				93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */,
 				E27D5D18188A9E1800EBD213 /* NSData+Base64.m in Sources */,
 				93CCD79C188A5AD400C6850F /* pstAppDelegate.m in Sources */,
