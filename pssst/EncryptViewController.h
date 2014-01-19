@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSA.h"
 
 @interface EncryptViewController : UIViewController
                     <UIPickerViewDelegate, UIPickerViewDataSource>
@@ -16,6 +17,7 @@
 // a text view for holding the
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UITextView *plainText;
 
 @property (strong, nonatomic) NSMutableArray *friendArray;
 

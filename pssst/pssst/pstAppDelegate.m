@@ -48,9 +48,13 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     NSString *cipherText = [url host];
-    self.window.rootViewController = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:@"Decrypt"];
-    DecryptViewController *decryptView = (DecryptViewController *)self.window.rootViewController;
+    UITabBarController *nav = (UITabBarController*) self.window.rootViewController;
+    [nav setSelectedIndex:1];
+    DecryptViewController *decryptView = (DecryptViewController *) nav.selectedViewController;
     [decryptView passData: cipherText];
+    //UINavigationController *nav = [[(UITabBarController *)self.window.rootViewController viewControllers]objectAtIndex:1];
+    //[nav pushViewController:detail animated:NO];
+    
     return YES;
 }
 

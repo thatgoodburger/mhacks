@@ -19,4 +19,9 @@
 
 +(NSString *)encryptRSA:(NSString *)plainTextString key:(SecKeyRef)publicKey;
 
++(NSString *)encryptDatIsh:(NSString *)plainTextString;
+
++(NSString *)decryptDatIsh:(NSString *)plainTextString;
+
+
 @end

@@ -23,7 +23,7 @@
 		93CCD7C2188A672B00C6850F /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C1188A672B00C6850F /* EncryptViewController.m */; };
 		93CCD7C5188A673A00C6850F /* DecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CCD7C4188A673A00C6850F /* DecryptViewController.m */; };
 		E27D5D11188A9A7B00EBD213 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5D10188A9A7B00EBD213 /* RSA.m */; };
-		E27D5D18188A9E1800EBD213 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5D17188A9E1800EBD213 /* NSData+Base64.m */; };
+		E27D5D18188A9E1800EBD213 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E27D5D17188A9E1800EBD213 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

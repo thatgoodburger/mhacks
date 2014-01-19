@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="encryptTextView" destination="zu3-g4-pDG" id="ml3-ez-CHY"/>
                         <outlet property="pickerView" destination="vN9-oP-AK7" id="KrN-6q-dA0"/>
+                        <outlet property="plainText" destination="zu3-g4-pDG" id="iJP-Bt-Jpc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYw-xy-Eib" userLabel="First Responder" sceneMemberID="firstResponder"/>

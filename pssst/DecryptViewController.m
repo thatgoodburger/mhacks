@@ -10,7 +10,8 @@
 
 @implementation DecryptViewController
 - (void)passData: (NSString *) data {
-    self.cipherText.text = data;
+    //self.cipherText.text = data;
+    self.cipherText.text = [RSA decryptDatIsh:data];
+    
 }
-
 @end

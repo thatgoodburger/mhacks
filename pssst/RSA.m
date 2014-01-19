@@ -70,4 +70,31 @@
 	return [encryptedData base64EncodedString];
 }
 
++(NSString *)encryptDatIsh:(NSString *)plainTextString {
+    plainTextString = [plainTextString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    char *cString = (char *)[[plainTextString lowercaseString] UTF8String];
+    for(int i =0; i < plainTextString.length; i++) {
+        cString[i]++;
+        if(cString[i] == 123) {
+            cString[i] = 97;
+        }
+        if(cString[i] == 38) {
+            cString[i] = 37;
+        }
+    }
+    return [NSString stringWithUTF8String:cString];
+}
++(NSString *)decryptDatIsh:(NSString *)plainTextString {
+    char *cString = (char *)[[plainTextString lowercaseString] UTF8String];
+    for(int i =0; i < plainTextString.length; i++) {
+        cString[i]--;
+        if(cString[i] == 96) {
+            cString[i] = 122;
+        }
+        if(cString[i] == 36) {
+            cString[i] = 37;
+        }
+    }
+    return [[NSString stringWithUTF8String:cString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
 @end

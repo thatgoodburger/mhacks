@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSA.h"
 
 @interface DecryptViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *cipherText;
