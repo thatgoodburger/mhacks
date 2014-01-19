@@ -83,12 +83,10 @@
     if([MFMessageComposeViewController canSendText]) {
         NSString *friendRequest = @"Pssst://|";
         friendRequest = [friendRequest stringByAppendingString:[[NSUserDefaults standardUserDefaults] stringForKey:@"PublicKey"]];
-        friendRequest = [NSString stringWithFormat:@"|%@",[friendRequest stringByAppendingString:[[NSUserDefaults standardUserDefaults] stringForKey:@"Name"]]];
         addFriendController.body = [NSString stringWithFormat: @"Hey!  Be my friend on pssst and we can send secret messages back and forth! Just click the link below if you want to be friends.\n%@",friendRequest];
         addFriendController.messageComposeDelegate = self;
         [self presentViewController:addFriendController animated:YES completion:NULL];
     }
 
 }
-
 @end
