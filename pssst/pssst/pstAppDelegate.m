@@ -47,6 +47,7 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
+    NSLog(sourceApplication);
     NSString *cipherText = [url host];
     UITabBarController *nav = (UITabBarController*) self.window.rootViewController;
     [nav setSelectedIndex:1];
