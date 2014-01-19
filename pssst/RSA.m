@@ -35,7 +35,7 @@
 	[keyPairAttr setObject:privateKeyAttr forKey:(__bridge id)kSecPrivateKeyAttrs];
 	[keyPairAttr setObject:publicKeyAttr forKey:(__bridge id)kSecPublicKeyAttrs];
 	
-	OSStatus err = SecKeyGeneratePair((__bridge CFDictionaryRef)keyPairAttr, &publicKey, &privateKey);
+	//OSStatus err = SecKeyGeneratePair((__bridge CFDictionaryRef)keyPairAttr, &publicKey, &privateKey);
 	
 	if(publicKey) CFRelease(publicKey);
 	if(privateKey) CFRelease(privateKey);
@@ -78,21 +78,15 @@
         if(cString[i] == 123) {
             cString[i] = 97;
         }
-        if(cString[i] == 38) {
-            cString[i] = 37;
-        }
     }
     return [NSString stringWithUTF8String:cString];
 }
-+(NSString *)decryptDatIsh:(NSString *)plainTextString {
-    char *cString = (char *)[[plainTextString lowercaseString] UTF8String];
-    for(int i =0; i < plainTextString.length; i++) {
++(NSString *)decryptDatIsh:(NSString *)cipherTextString {
+    char *cString = (char *)[[cipherTextString lowercaseString] UTF8String];
+    for(int i =0; i < strlen(cString); i++) {
         cString[i]--;
         if(cString[i] == 96) {
             cString[i] = 122;
-        }
-        if(cString[i] == 36) {
-            cString[i] = 37;
         }
     }
     return [[NSString stringWithUTF8String:cString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

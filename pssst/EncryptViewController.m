@@ -54,10 +54,13 @@
 - (IBAction)downSwipe:(id)sender
 {
     [self.view endEditing:YES];
-	
+    
     self.plainText.text = [RSA encryptDatIsh:self.plainText.text];
+    
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [NSString stringWithFormat:@"Pssst://%@", self.plainText.text];
+    self.plainText.text = @"ENCRYPTED";
+
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
     if([MFMessageComposeViewController canSendText]) {
         controller.body = pasteboard.string;
@@ -65,14 +68,26 @@
         [self presentViewController:controller animated:YES completion:NULL];
     }
 }
+
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
-	
-- (IBAction)leftSwipe:(id)sender
-{
-	[friendArray removeObject:friendArray[[pickerView selectedRowInComponent:0]]];
-	[pickerView reloadAllComponents];
+
+- (IBAction)removeFriend:(id)sender {
+    [friendArray removeObject:friendArray[[pickerView selectedRowInComponent:0]]];
+    [pickerView reloadAllComponents];
 }
 
+- (IBAction)addFriend:(id)sender {
+    MFMessageComposeViewController *addFriendController = [[MFMessageComposeViewController alloc] init];
+    if([MFMessageComposeViewController canSendText]) {
+        NSString *friendRequest = @"Pssst://|";
+        friendRequest = [friendRequest stringByAppendingString:[[NSUserDefaults standardUserDefaults] stringForKey:@"PublicKey"]];
+        friendRequest = [NSString stringWithFormat:@"|%@",[friendRequest stringByAppendingString:[[NSUserDefaults standardUserDefaults] stringForKey:@"Name"]]];
+        addFriendController.body = [NSString stringWithFormat: @"Hey!  Be my friend on pssst and we can send secret messages back and forth! Just click the link below if you want to be friends.\n%@",friendRequest];
+        addFriendController.messageComposeDelegate = self;
+        [self presentViewController:addFriendController animated:YES completion:NULL];
+    }
+
+}
 @end

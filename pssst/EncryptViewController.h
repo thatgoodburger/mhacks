@@ -19,7 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *encryptTextView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UITextView *plainText;
-
+- (IBAction)removeFriend:(id)sender;
+- (IBAction)addFriend:(id)sender;
 @property (strong, nonatomic) NSMutableArray *friendArray;
 
 @end
