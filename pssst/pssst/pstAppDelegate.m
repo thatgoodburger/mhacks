@@ -23,6 +23,9 @@
     {
         // This is the first launch ever
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Setup"];
+        //GONNA NEED A POPUP TO ASK FOR DISPLAY NAME
+       // NSString * displayName = ;
+       // [[NSUserDefaults standardUserDefaults] setObject:displayName forKey:@"Name"];
         //GENERATE KEYPAIR
         [[NSUserDefaults standardUserDefaults] setObject:@"demo" forKey:@"PrivateKey"];
         [[NSUserDefaults standardUserDefaults] setObject:@"demo" forKey:@"PublicKey"];
