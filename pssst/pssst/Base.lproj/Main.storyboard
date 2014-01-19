@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="582" y="70"/>
         </scene>
-        <!--View Controller-->
+        <!--Auth Screen View Controller-->
         <scene sceneID="wX0-VM-Ic7">
             <objects>
-                <viewController id="03D-qv-GcW" sceneMemberID="viewController">
+                <viewController id="03D-qv-GcW" customClass="authScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="12H-cJ-Wkn"/>
                         <viewControllerLayoutGuide type="bottom" id="Nc4-CJ-1fn"/>
