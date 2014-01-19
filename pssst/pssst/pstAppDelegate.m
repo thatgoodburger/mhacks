@@ -15,6 +15,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"Setup"])
+    {
+        // app already launched
+    }
+    else
+    {
+        // This is the first launch ever
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Setup"];
+        //GENERATE KEYPAIR
+        [[NSUserDefaults standardUserDefaults] setObject:@"demo" forKey:@"PrivateKey"];
+        [[NSUserDefaults standardUserDefaults] setObject:@"demo" forKey:@"PublicKey"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     return YES;
 }
 							
@@ -47,15 +60,13 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    NSLog(sourceApplication);
-    NSString *cipherText = [url host];
     UITabBarController *nav = (UITabBarController*) self.window.rootViewController;
     [nav setSelectedIndex:1];
-    DecryptViewController *decryptView = (DecryptViewController *) nav.selectedViewController;
-    [decryptView passData: cipherText];
-    //UINavigationController *nav = [[(UITabBarController *)self.window.rootViewController viewControllers]objectAtIndex:1];
-    //[nav pushViewController:detail animated:NO];
     
+    DecryptViewController *decryptView = (DecryptViewController *) nav.selectedViewController;
+    NSString *cipherText = [url host];
+    [decryptView passData: cipherText];
+
     return YES;
 }
 

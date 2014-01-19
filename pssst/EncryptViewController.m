@@ -48,9 +48,13 @@
 - (IBAction)downSwipe:(id)sender
 {
     [self.view endEditing:YES];
+    
     self.plainText.text = [RSA encryptDatIsh:self.plainText.text];
+    
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = [NSString stringWithFormat:@"Pssst://%@", self.plainText.text];
+    self.plainText.text = @"ENCRYPTED!";
+
     MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
     if([MFMessageComposeViewController canSendText]) {
         controller.body = pasteboard.string;
@@ -58,7 +62,9 @@
         [self presentViewController:controller animated:YES completion:NULL];
     }
 }
+
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
 @end

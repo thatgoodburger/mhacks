@@ -35,6 +35,22 @@
                                     <outlet property="delegate" destination="OCk-e1-NRS" id="tsB-ub-oXk"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nI-sZ-rfd">
+                                <rect key="frame" x="270" y="152" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sw5-Ij-hUW">
+                                <rect key="frame" x="20" y="144" width="30" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="–">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -47,6 +63,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Encrypt" id="iir-O7-KeD"/>
                     <connections>
+                        <outlet property="addFriend" destination="1nI-sZ-rfd" id="OVP-K5-eYe"/>
+                        <outlet property="deleteFriend" destination="sw5-Ij-hUW" id="3n8-b5-cMg"/>
                         <outlet property="encryptTextView" destination="zu3-g4-pDG" id="ml3-ez-CHY"/>
                         <outlet property="pickerView" destination="vN9-oP-AK7" id="KrN-6q-dA0"/>
                         <outlet property="plainText" destination="zu3-g4-pDG" id="iJP-Bt-Jpc"/>
